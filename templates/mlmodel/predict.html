@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+{% csrf_token %}
+
+   <section id="predict" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h4>
+                <i class="fas fa-sign-in-alt"></i> Predict</h4>
+            </div>
+            <div class="card-body">
+            	<!-- Alerts -->
+            	{% include 'partials/_alerts.html' %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <h1>Predict The Price of Your Property</h1>
+              <form action="result" method="POST">
+
+                {% csrf_token %}
+
+                 <div class="form-group">
+                  <label for="one">Bedrooms </label>
+                  <input type="number" step="any" name="one" class="form-control" value="3" required>
+                </div>
+
+                 <div class="form-group">
+                  <label for="two">Bathrooms </label>
+                  <input type="number" step="any" name="two" class="form-control" value="1" required>
+                </div>
+
+                 <div class="form-group">
+                  <label for="thri">Sq.Ft. Living</label>
+                  <input type="number" step="any" name="thri" class="form-control" value="1180" required>
+                </div>
+
+                 <div class="form-group">
+                  <label for="four">Sq.Ft. Lot</label>
+                  <input type="number" step="any" name="four" class="form-control" value="5650" required>
+                </div>
+
+                 <div class="form-group">
+                  <label for="five">Floors</label>
+                  <input type="number" step="any" name="five" class="form-control" value="1" required>
+                </div>
+
+                  <div class="form-group">
+                  <label for="n6">Waterfront (Yes-1 No-0)</label>
+                  <input type="number" step="any" name="n6" class="form-control" value="0" required>
+                  </div>
+                  <div class="form-group">
+                  <label for="n7">View (0-4) </label>
+                  <input type="number" step="any" name="n7" class="form-control" value="0" required>
+                  </div>
+                  <div class="form-group">
+                  <label for="n8">Condition (1-5)</label>
+                  <input type="number" step="any" name="n8" class="form-control" value="3" required>
+                  </div>
+                  <div class="form-group">
+                  <label for="n9">Grade (1-13)</label>
+                  <input type="number" step="any" name="n9" class="form-control" value="7" required>
+                  </div>
+                  <div class="form-group">
+                  <label for="n10">Sq.Ft. Above</label>
+                  <input type="number" step="any" name="n10" class="form-control" value="1180" required>
+                  </div>
+                  <div class="form-group">
+                  <label for="n11">Sq.Ft. Basement</label>
+                  <input type="number" step="any" name="n11" class="form-control" value="0" required>
+                  </div>
+                  <div class="form-group">
+                  <label for="n12">Year Built</label>
+                  <input type="number" step="any" name="n12" class="form-control" value="1955" required>
+                  </div>
+                  <div class="form-group">
+                  <label for="n13">Year Renovated</label>
+                  <input type="number" step="any" name="n13" class="form-control" value="0" required>
+                  </div>
+                  <div class="form-group">
+                  <label for="n14">Zipcode</label>
+                  <input type="number" step="any" name="n14" class="form-control" value="98178" required>
+                  </div>
+                  <div class="form-group">
+                  <label for="n15">Avg. Sq.Ft. Living Area of Nearby Properties</label>
+                  <input type="number" step="any" name="n15" class="form-control" value="1340" required>
+                  </div>
+                  <div class="form-group">
+                  <label for="n16">Avg. Sq.Ft. Lot Area of Nearby Properties</label>
+                  <input type="number" step="any" name="n16" class="form-control" value="5600" required>
+                  </div>
+
+                <input type="submit" value="Predict" class="btn btn-secondary btn-block">
+              </form>
+
+                 <div class="row">
+                 <h2>{{result2}}</h2>
+                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
