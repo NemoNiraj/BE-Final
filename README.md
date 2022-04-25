@@ -1,3 +1,10 @@
+### Readme Nemo###
+
+Fetal : change in path of dataset "templates/mlmodel/predict.html"
+copy paste the whole path of csv in dataset.
+
+Commit 1 : only updated the readme
+
 ## Coralcity Real-Estate Django Website
 
 This website is build for Coralcity Real-Estate business, You will get an admin page where you can manage your users, listings, realtors and queries from other users about listings. You will get search page where users can find listings from your database which suits their needs. You will get a listing page where users can see listings and when they click on those listings they will get a detailed page of that listing with photos of the property. You can manage users. All the passwords of the users are stored in hash value to protect users privacy. Link to your all Social Media pages. About page, Apartments, Dashbord, Agents, Contact us, Log out, Become an agent.
