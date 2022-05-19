@@ -4,6 +4,7 @@ Fetal : change in path of dataset "templates/mlmodel/predict.html"
 copy paste the whole path of csv in dataset.
 
 Commit 1 : only updated the readme
+Commit 2 : addition of imgs are remaining in proj.
 
 ## Coralcity Real-Estate Django Website
 
