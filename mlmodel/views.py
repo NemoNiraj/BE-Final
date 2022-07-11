@@ -23,7 +23,7 @@ def predict_view(request):
 
 def result(request):
 	#return render(request, 'mlmodel/predict.html')
-	dataset = pd.read_csv(r"C:\Users\Lenovo\Desktop\next\Django-Real-Estate-Management-Webapp-main\kc_house_data.csv")
+	dataset = pd.read_csv(r"C:\HPP\BE-final\kc_house_data.csv")
 	dataset = dataset.drop(['id','date','lat','long'],axis=1)
 	X = dataset.iloc[:, 1:].values
 	y = dataset.iloc[:, 0].values
